@@ -1,0 +1,36 @@
+ 
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+      <meta charset="UTF-8">
+      <title>Test</title>
+  </head>
+  <style>
+    .me-btn {
+      height: 7rem;
+      flex: 0 0 30%;
+      margin: 1rem;
+      max-width: 30%;
+      width: 100%;
+    }
+
+    #square-wrapper {
+      display: flex;
+      justify-content: start;
+      flex-flow: wrap;
+    }
+  </style>
+  <body>
+    <input id="input-squares" name="noOfSquares" data-bind="noOfSquares"/>
+
+    <button id="load-more">Load More</button>
+
+    <div id="square-wrapper" class="">
+    </div>
+
+    <template id="temp-btn">
+        <button class="me-btn"></button>
+      </template>
+    <script src="app.js"></script>
+  </body>
+</html>
